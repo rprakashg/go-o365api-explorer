@@ -1,0 +1,8 @@
+{
+	"clientId" : "{replace}",
+	"clientSecret" : "{replace}",
+	"redirectUrl": "replace",
+	"tenant": "{replace}",
+	"unifiedApiEndpointUrl":"https://graph.microsoft.com/beta",
+	"unifiedApiResourceId": "https://graph.microsoft.com" 
+}

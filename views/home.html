@@ -1,0 +1,29 @@
+<form method="GET">
+	<div class="input-group">
+		<span class="input-group-addon">
+			<input type="submit" value="GET" name="urlRequest" />
+		</span>
+		<input type="text" name="restEndPoint" class="form-control" value="{{.Data.EndPointUri}}" />
+	</div>
+	{{if .Data.Result}}
+	<div class="row">
+		<div class="col-md-6">Request Duration : {{.Data.RequestDuration}}</div>
+		<div class="col-md-6" align="right">
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-success" id="raw-btn">Raw</button>	
+			</div>
+		</div>
+	</div>
+
+	<asp width="50%" height="500px" borderstyle="Inset" runat="server" id="QueryResponsePanel" scrollbars="Auto">
+		<pre>
+			<div height="100px" width="40%" class="panel-body" scrollbars="Auto" style="max-height: 65vh; overflow-y: scroll; display: block;" id="jsonRaw">
+				{{.Data.Result}}
+			</div>
+		</pre>    
+	</asp>
+	{{end}}
+</form>
+
+
+
