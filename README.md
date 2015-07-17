@@ -10,10 +10,10 @@ Installing the App
 Running
 
 
-Build Container Image
+Build Container Image :
 docker build -t "go-o365api-explorer" .
 
-Running the Container
+Running the Container :
 docker -i -t -p 443:10443 go-o365api-explorer
 
 
