@@ -8,9 +8,8 @@ services:
 go:
   - 1.5
 
-before_install:
-  - docker build -t "rprakashg/go-o365api-explorer" .
-
 install:
+  - docker build -t "rprakashg/go-o365api-explorer" .
+  - docker run -dp 127.0.0.1:10443:443 --name "o365api-explorer"
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push "rprakashg/go-o365api-explorer"
