@@ -11,9 +11,9 @@ Running
 
 
 Build Container Image :
-docker build -t "go-o365api-explorer" .
+docker build -t "rprakashg/go-o365api-explorer" .
 
 Running the Container :
-docker run -itp 443:10443 go-o365api-explorer
+docker run -itp 443:10443 "rprakashg/go-o365api-explorer"
 
 
