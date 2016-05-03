@@ -1,8 +1,8 @@
 {
-	"clientId" : "{replace}",
-	"clientSecret" : "{replace}",
-	"redirectUrl": "replace",
-	"tenant": "{replace}",
+	"clientId" : "baa2add3-3793-4290-a437-cf482d693a84",
+	"clientSecret" : "BPwFgM6PE6pOt4KXT5ak9qPaiO7+Dd+wNXNnpir427o=",
+	"redirectUrl": "https://localhost/callback",
+	"tenant": "2545f861-1913-4920-bb45-768407acb161",
 	"unifiedApiEndpointUrl":"https://graph.microsoft.com/beta",
 	"unifiedApiResourceId": "https://graph.microsoft.com" 
 }
